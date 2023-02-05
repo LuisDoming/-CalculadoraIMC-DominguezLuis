@@ -42,23 +42,23 @@ class MainActivity : AppCompatActivity() {
                     salud = "Bajo peso"
                     color = R.color.colorGreenish
                 }
-                resultado < 18.5->{
+                resultado >= 18.5 && resultado <= 24.9->{
                     salud = "Saludable"
                     color = R.color.colorGreen
                 }
-                resultado < 18.5->{
+                resultado >= 25 && resultado <= 29.9->{
                     salud = "Sobrepeso"
                     color = R.color.colorYellow
                 }
-                resultado < 18.5->{
+                resultado >= 30 && resultado <= 34.9->{
                     salud = "Obesidad  grado 1"
                     color = R.color.colorOrange
                 }
-                resultado < 18.5->{
+                resultado >= 35 && resultado <= 39.9->{
                     salud = "Obesidad grado 2"
                     color = R.color.colorRed
                 }
-                resultado < 18.5->{
+                resultado >= 40->{
                     salud = "Obesidad grado 3"
                     color = R.color.colorBrown
                 }
